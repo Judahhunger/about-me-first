@@ -1,6 +1,6 @@
 'use strict';
 alert('help is there anybody out there? Just nod if you can hear me.');
-
+// start of prompts with 5 questions Y/N about myself //
 var myOrange = prompt('Do you think i like the color orange? Please reply with YES or NO').toUpperCase();
     if (myOrange === 'YES' || myOrange === 'Y'){
         alert('I don\'t dislike orange.');
@@ -23,23 +23,31 @@ var countriesVisited = prompt('Do you think I\'ve been to over 10 countries? yes
     } else{
         alert('Actually I\'ve been to 17 countries');
     }
-console.log('the user entered' + countriesVisited + '. For question 3');
+console.log('the user entered ' + countriesVisited + '. For question 3');
 
 var favoriteFruit = prompt('Do you think I like pineapple? y or n').toLowerCase();
     if (favoriteFruit === 'yes' || favoriteFruit === 'y'){
-        alert('I Love pineapple!!')
+        alert('I Love pineapple!!');
     } else{
-        alert('Pineapple is my favorite fruit!')
+        alert('Pineapple is my favorite fruit!');
     }
-console.log('the user entered' + favoriteFruit + '. On question 4');
+console.log('the user entered ' + favoriteFruit + '. On question 4');
 
-// var theColorPurple = prompt('Do you think i like, the color purple?')
+var theColorPurple = prompt('Do you think i like, the color purple?').toUpperCase();
+    if (theColorPurple === 'YES' || 'Y'){
+        alert('Yes I liked the book and i like the color.');
+    } else {
+        alert('The book or the color I like them both.');
+    }
+console.log(theColorPurple + ' was answered for question 5');
 
-// var myAge = parseInt(prompt('How old do you think i am?'));
-//     if(myAge === 32){
-//         alert('That\'s my age!!');
-//     } else if(myAge < 32){
-//         alert('I am older')
-//     } else{
-//         alert('nope i\'m not that old yet')
-//     }
+ var myAge = parseInt(prompt('How old do you think i am?'));   
+    if(myAge === 32){
+      alert('That\'s my age!!');
+   } else if(myAge < 32){
+      alert('I am older');
+   } else{      
+        alert('nope i\'m not that old yet');
+   }
+console.log(myAge + ' is how old the user thinks i am');
+// End of prompt questions //
