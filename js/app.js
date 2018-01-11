@@ -77,7 +77,9 @@ while(k < 5 && j === false){
       j = true;
       alert('Yes I\'ve been to ' + statesVisted);
       console.log(j);
+    }else{
+      alert('nope try again');
+      break;
     }
   }
 }
-var tallyTotal = T;
