@@ -37,22 +37,29 @@ if (favoriteFruit === 'yes' || favoriteFruit === 'y'){
 }
 console.log('the user entered ' + favoriteFruit + '. On question 4');
 
-var theColorPurple = prompt('Do you think i like, the color purple?').toUpperCase();
-if (theColorPurple === 'YES' || 'Y'){
-  alert('Yes I liked the book and i like the color.');
+var theColorYellow = prompt('Do you think i like, the color yellow?').toUpperCase();
+if (theColorYellow === 'NO' || 'N'){
+  alert('You are correct.');
 } else {
-  alert('The book or the color I like them both.');
+  alert('Ewww.');
 }
-console.log(theColorPurple + ' was answered for question 5');
+console.log(theColorYellow + ' was answered for question 5');
 
-// var myAge = parseInt(prompt('How old do you think i am?'));
-// if(myAge === 32){
-//   alert('That\'s my age!!');
-// } else if(myAge < 32){
-//   alert('I am older');
-// } else{
-//   alert('nope i\'m not that old yet');
-// }
-// alert('Thanks answering ' + userName + '.');
-// console.log(myAge + ' is how old the user thinks i am');
-// End of prompt questions //
+// my age prompt guessing game //
+var counter = 0;
+var flag = false;
+var myAge = 32;
+
+do{
+  var guessMyAge = parseInt(prompt('Can you guess my age?'));
+  counter++;
+  console.log(counter.length)
+  if(guessMyAge === myAge){
+    flag = true;
+    alert('That\'s my age!!');
+  } else if(guessMyAge < 32){
+    alert('I am older');
+  } else{
+    alert('nope i\'m not that old yet');
+  }
+} while(flag === false && counter <= 6);
