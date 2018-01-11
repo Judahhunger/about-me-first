@@ -37,11 +37,11 @@ if (favoriteFruit === 'yes' || favoriteFruit === 'y'){
 }
 console.log('the user entered ' + favoriteFruit + '. On question 4');
 
-var theColorYellow = prompt('Do you think i like, the color yellow?').toUpperCase();
-if (theColorYellow === 'NO' || 'N'){
-  alert('You are correct.');
+var theColorYellow = prompt('Do you think i like, the color yellow? y or n').toUpperCase();
+if (theColorYellow === 'YES' || theColorYellow === 'Y'){
+  alert('Eww.');
 } else {
-  alert('Ewww.');
+  alert('You are correct.');
 }
 console.log(theColorYellow + ' was answered for question 5');
 
