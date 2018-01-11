@@ -14,7 +14,7 @@ if (myOrange === 'YES' || myOrange === 'Y'){
 console.log('The user entered ' + myOrange + ' for quetion 1');
 
 var mySiblings = prompt('Do you think i have siblings? YES or No').toUpperCase();
-if (mySiblings === 'YES'){
+if (mySiblings === 'YES' || mySiblings === 'Y'){
   alert('YES I have a brother and a sister.');
 } else{
   alert('Sometimes I wish i was an only child!!');
@@ -79,7 +79,9 @@ while(k < 5 && j === false){
       console.log(j);
     }else{
       alert('nope try again');
-      break;
-    }
-  }
+      break;}
+  }if(k === 1){ alert('you have 4 more tries');}
+  if(k === 2){ alert('you have 3 more tries');}
+  if(k === 3){ alert('you have 2 more tries');}
+  if(k === 4){ alert('you have 1 more tries');}
 }
