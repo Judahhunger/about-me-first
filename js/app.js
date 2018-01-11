@@ -45,14 +45,14 @@ if (theColorPurple === 'YES' || 'Y'){
 }
 console.log(theColorPurple + ' was answered for question 5');
 
-var myAge = parseInt(prompt('How old do you think i am?'));
-if(myAge === 32){
-  alert('That\'s my age!!');
-} else if(myAge < 32){
-  alert('I am older');
-} else{
-  alert('nope i\'m not that old yet');
-}
-alert('Thanks answering ' + userName + '.');
-console.log(myAge + ' is how old the user thinks i am');
+// var myAge = parseInt(prompt('How old do you think i am?'));
+// if(myAge === 32){
+//   alert('That\'s my age!!');
+// } else if(myAge < 32){
+//   alert('I am older');
+// } else{
+//   alert('nope i\'m not that old yet');
+// }
+// alert('Thanks answering ' + userName + '.');
+// console.log(myAge + ' is how old the user thinks i am');
 // End of prompt questions //
