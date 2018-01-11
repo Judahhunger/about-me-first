@@ -1,5 +1,5 @@
 'use strict';
-alert('help is there anybody out there? Just nod if you can hear me.');
+alert('Johnny Five is Alive.');
 // user prompt to personalize site to user //
 var userName = prompt('Hello my name is Judah, what is your name?');
 alert('Hello ' + userName + '. here is a question game to get to know me better.');
@@ -53,7 +53,7 @@ var myAge = 32;
 do{
   var guessMyAge = parseInt(prompt('Can you guess my age?'));
   counter++;
-  console.log(counter.length)
+  console.log(counter.length);
   if(guessMyAge === myAge){
     flag = true;
     alert('That\'s my age!!');
@@ -63,3 +63,21 @@ do{
     alert('nope i\'m not that old yet');
   }
 } while(flag === false && counter <= 6);
+
+// states visted guessing game with array //
+var j = false;
+var k = 0;
+
+while(k < 5 && j === false){
+  var statesVisted = ['organ', 'california', 'idaho', 'montana', 'alaska', 'hawaii', 'wyoming', 'colorado', 'arazona', 'new mexico'];
+  var statesGuessed = prompt('Can you guess one of the states i\'ve been to?').toLowerCase();
+  k++;
+  for(var i = 0; i < statesVisted.length; i++ ){
+    if(statesGuessed === statesVisted[i]){
+      j = true;
+      alert('Yes I\'ve been to ' + statesVisted);
+      console.log(j);
+    }
+  }
+}
+var tallyTotal = T;
