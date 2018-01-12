@@ -6,7 +6,7 @@ function sayHello() {
   alert('Hello ' + userName + '. here is a question game to get to know me better.');
 }
 
-// start of prompts with 5 questions Y/N about myself //
+
 function mehColor() {
   var myOrange = prompt('Do you think i like the color orange? Please reply with YES or NO').toUpperCase();
 
