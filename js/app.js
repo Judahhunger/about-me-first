@@ -4,12 +4,24 @@ alert('Johnny Five is Alive.');
 var userName = prompt('Hello my name is Judah, what is your name?');
 alert('Hello ' + userName + '. here is a question game to get to know me better.');
 
+
+function mehColor() {
+  var myOrange = prompt('Do you think i like the color orange? Please reply with YES or NO').toUpperCase();
+
+  if (myOrange === 'YES' || myOrange === 'Y'){
+    alert('I don\'t dislike orange.');
+  } else{
+    alert('Meh I could go either');
+  }
+  console.log('The user entered ' + myOrange + ' for quetion 1');
+
 // start of prompts with 5 questions Y/N about myself //
 var myOrange = prompt('Do you think i like the color orange? Please reply with YES or NO').toUpperCase();
 if (myOrange === 'YES' || myOrange === 'Y'){
   alert('I don\'t dislike orange.');
 } else{
   alert('Meh I could go either');
+
 }
 console.log('The user entered ' + myOrange + ' for quetion 1');
 
