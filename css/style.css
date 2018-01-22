@@ -1,13 +1,22 @@
-.greybackground {
-  background-color: #bbbbbb;
-}
+
 header {
   background-color: #3AFF5C;
+  width: 80%;
   padding: 10px;
   border: 10px dotted #000000;
-  margin-bottom: 100px;
-  font-size: 18px;
+  margin: auto;
+  font-size: 30px;
   font-family: monospace;
   display: block;
   text-align: center;
+}
+body{
+  height: 100%;
+  background-color: #b11919;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  /* same as above */
+  /* font:normal 20px Arial, Helvetica, sans-serif; */
 }
